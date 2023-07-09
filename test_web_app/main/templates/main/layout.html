@@ -14,13 +14,13 @@
 </head>
 <body>
     <aside>
-        <img src="{% static 'main/img/pyt.svg'%}" alt="Подпись"  height="100" width="200">
-        <span class="logo">Python Django</span>
+        <img src="{% static 'main/img/pyt.svg'%}" alt="Подпись">
+        <span class="logo">PyDjango</span>
         <h3>Навигация</h3>
         <ul>
-            <a href=""><li><i class="fas fa-home"></i> Home</li></a>
-            <a href=""><li><i class="fas fa-address-card"></i> About</li></a>
-            <a href=""><li><i class="fas fa-paper-plane"></i> Contacts</li></a>
+            <a href="{% url 'home' %}"><li><i class="fas fa-home"></i> Home</li></a>
+            <a href="{% url 'about' %}"><li><i class="fas fa-address-card"></i> About</li></a>
+            <a href="{% url 'contacts' %}"><li><i class="fas fa-paper-plane"></i> Contacts</li></a>
         </ul>
     </aside>
     <main>
